@@ -10,7 +10,6 @@ export default function Players({ socket }) {
     name: "",
     avatar: Avatars,
     score: 0,
-    id: null, // Tambahkan id untuk membedakan pemain
   });
   const [players, setPlayers] = useState({});
   const [drawer, setDrawer] = useState(null); // Menyimpan siapa drawer
