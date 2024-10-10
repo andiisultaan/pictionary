@@ -4,7 +4,7 @@ const { createServer } = require("node:http");
 const { v4: uuidv4 } = require("uuid");
 const { Server } = require("socket.io");
 
-const PORT = 3000;
+const PORT = 80;
 let players = {};
 let drawerIndex = 0;
 let gotCorrect = 0;
@@ -14,7 +14,7 @@ let status = "waiting";
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173", "https://pictionary-five.vercel.app"], // Ganti dengan port front-end Anda jika perlu
+    origin: ["http://localhost:5173", "https://pictionary-two.vercel.app/"], // Ganti dengan port front-end Anda jika perlu
   },
 });
 
