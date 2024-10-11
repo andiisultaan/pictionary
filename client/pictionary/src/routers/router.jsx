@@ -6,7 +6,7 @@ import GamePage from "../views/GamePage";
 import LobbyPage from "../views/LobbyPage";
 
 import { io } from "socket.io-client";
-const socket = io("https://pictionary.yubi.web.id/", {
+const socket = io("https://pictionary.yubi.web.id", {
   autoConnect: false,
 });
 
