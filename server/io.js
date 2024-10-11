@@ -14,7 +14,7 @@ let status = "waiting";
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173", "https://pictionary-five.vercel.app"], // Ganti dengan port front-end Anda jika perlu
+    origin: ["https://pictionary-two.vercel.app/", "http://localhost:5173"], // Ganti dengan port front-end Anda jika perlu
   },
 });
 
