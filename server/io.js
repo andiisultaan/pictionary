@@ -4,7 +4,7 @@ const { createServer } = require("node:http");
 const { v4: uuidv4 } = require("uuid");
 const { Server } = require("socket.io");
 
-const PORT = 3000;
+const PORT = 80;
 let players = {};
 let drawerIndex = 0;
 let gotCorrect = 0;
